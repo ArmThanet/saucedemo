@@ -130,7 +130,7 @@ test.describe("info Function", () => {
   });
 
   validUser.forEach(({ username, password }) => {
-    test.only(`TC023: When clicking "Continue" with some client information, should display an error message(enter FirstName and LastName): ${username}`, async ({
+    test(`TC023: When clicking "Continue" with some client information, should display an error message(enter FirstName and LastName): ${username}`, async ({
       loginPage,
       homePage,
       cartPage,
@@ -179,6 +179,31 @@ test.describe("info Function", () => {
 
   validUser.forEach(({ username, password }) => {
     test(`TC025: When clicking "Continue" with all client information, should proceed to the checkout overview page
+(enter FirstName and Zipcode): ${username}`, async ({
+      loginPage,
+      homePage,
+      cartPage,
+      infoPage,
+    }) => {
+      // Login action
+      await navigateToCheckoutAndLogin(
+        { loginPage, homePage, cartPage },
+        username,
+        password
+      );
+
+      const { firstName, lastName, zipcode } = info[0];
+      // Fill the info and click continue button
+      await infoPage.fillInfo(firstName, "", zipcode);
+      await infoPage.clickContinueButton();
+      // Check if error message appears for missing information
+      expect(await infoPage.GetErrorMessage()).not.toContain("is required");
+      expect(infoPage.isValidInfoUrl()).toBe(false);
+    });
+  });
+
+  validUser.forEach(({ username, password }) => {
+    test(`TC026: When clicking "Continue" with all client information, should proceed to the checkout overview page
 (enter alldata): ${username}`, async ({
       loginPage,
       homePage,

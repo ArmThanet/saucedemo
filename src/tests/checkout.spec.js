@@ -43,7 +43,7 @@ test.describe("Checkout Function", () => {
 };
 
 validUser.forEach(({ username, password }) => {
-    test(`TC028: The cart badge number should be removed
+    test(`TC029: The cart badge number should be removed
 
 : ${username}`, async ({ loginPage, homePage, cartPage, infoPage,checkoutPage }) => {
       await navigateToCheckoutAndLogin(
@@ -60,7 +60,7 @@ validUser.forEach(({ username, password }) => {
   });
 
   validUser.forEach(({ username, password }) => {
-    test(`TC029: The cart badge number should be removed
+    test(`TC030: Display message complete order
 : ${username}`, async ({ loginPage, homePage, cartPage, infoPage,checkoutPage }) => {
       await navigateToCheckoutAndLogin(
         { loginPage, homePage, cartPage ,checkoutPage,infoPage},

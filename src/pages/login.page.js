@@ -11,6 +11,10 @@ export class LoginPage {
 
   locatormessageError = '[data-test="error"]';
 
+  locatorhamberger = ".bm-burger-button";
+
+  locatorlogout = "#logout_sidebar_link";
+
   /**
    *
    * @param {Page} page
@@ -60,5 +64,15 @@ export class LoginPage {
     console.log(url === this.baseUrl);
 
     return url === this.baseUrl;
+  }
+
+  async clickHambergerIcon() {
+    await this.page.click(this.locatorhamberger);
+    console.log("Click on the hamberger button");
+  }
+
+  async ClickLogout() {
+    await this.page.click(this.locatorlogout);
+    console.log("Click on the logout button");
   }
 }

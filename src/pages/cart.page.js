@@ -1,6 +1,4 @@
 import { Page } from "@playwright/test";
-import { removeDollarSign } from "../utils";
-import { parse } from "path";
 import { removeSlash } from "../utils";
 // import
 
