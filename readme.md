@@ -35,7 +35,7 @@ To get started, clone this repository and install the necessary dependencies.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-[Documentation](https://playwright.dev/docs/test-cli)_
+[Documentation](https://playwright.dev/docs/test-cli)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -44,9 +44,9 @@ To get started, clone this repository and install the necessary dependencies.
 <!-- ROADMAP -->
 ## Tesc case
 
-```
-https://docs.google.com/spreadsheets/d/1nKxZP6D819xLlscapIMO3KAVhwIxghmuguJ1anZHiPs/edit?gid=0#gid=0
-```
+
+* [Test Case](https://docs.google.com/spreadsheets/d/1nKxZP6D819xLlscapIMO3KAVhwIxghmuguJ1anZHiPs/edit?gid=0#gid=0)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -58,9 +58,7 @@ https://docs.google.com/spreadsheets/d/1nKxZP6D819xLlscapIMO3KAVhwIxghmuguJ1anZH
 
 
 * [Playwright](https://playwright.dev/)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [GitHub Pages](https://pages.github.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 * [w3school](https://www.w3schools.com/js/default.asp)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
