@@ -8,7 +8,7 @@ test.describe("Login and Logout Function", () => {
     await loginPage.goto();
   });
 
-  test.only("TC001:Input fields should display as the data that was filled in", async ({
+  test("TC001:Input fields should display as the data that was filled in", async ({
     loginPage,
   }) => {
     await loginPage.fillUserPass("testuser", "passuser");
