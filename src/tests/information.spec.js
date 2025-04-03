@@ -197,8 +197,8 @@ test.describe("info Function", () => {
       await infoPage.fillInfo(firstName, "", zipcode);
       await infoPage.clickContinueButton();
       // Check if error message appears for missing information
-      expect(await infoPage.GetErrorMessage()).not.toContain("is required");
-      expect(infoPage.isValidInfoUrl()).toBe(false);
+      expect(await infoPage.GetErrorMessage()).toContain("is required");
+      expect(infoPage.isValidInfoUrl()).toBe(true);
     });
   });
 
